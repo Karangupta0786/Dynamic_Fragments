@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ProductActivity">
+
+    <ImageView
+        android:id="@+id/imgProduct_detail"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="9dp"
+        android:src="@drawable/iv_back"/>
+    <TextView
+        android:id="@+id/product_detail_Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProduct_detail"
+        android:layout_margin="5dp"
+        android:text="Jai Shree Ram"
+        android:textStyle="bold"
+        android:textColor="#BC1C1C"
+        android:textSize="19sp"/>
+    <TextView
+        android:id="@+id/product_detail_details"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/product_detail_price"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@id/product_detail_Title"
+        android:layout_marginStart="6dp"
+        android:text="Jai Shree Ram"
+        android:textColor="@color/black"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/product_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgProduct_detail"
+        android:layout_margin="5dp"
+        android:text="Jai Shree Ram"
+        android:textStyle="bold"
+        android:textColor="#BC1C1C"
+        android:textSize="19sp"/>
+    <Button
+        android:id="@+id/btn_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="9dp"
+        android:text="Order"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
