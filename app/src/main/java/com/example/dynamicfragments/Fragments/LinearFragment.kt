@@ -69,7 +69,7 @@ class LinearFragment : Fragment() {
                 val data = response.body()!!
                 val prodList = data.products
                 Toast.makeText(requireContext(), "Mission succeed", Toast.LENGTH_SHORT).show()
-                if (response.isSuccessful){
+                if (response.isSuccessful && isAdded){
                     progressBar.isVisible = false
                     val productAdapter = ProductAdapter(prodList,requireContext())
                     recycler.adapter = productAdapter

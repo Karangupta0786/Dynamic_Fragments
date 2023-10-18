@@ -58,7 +58,7 @@ class GridFragment : Fragment() {
         val retrofitBuilder = retrofit.getGridData()
         retrofitBuilder.enqueue(object : Callback<GridData?> {
             override fun onResponse(call: Call<GridData?>, response: Response<GridData?>) {
-                if (response.isSuccessful){
+                if (response.isSuccessful && isAdded){
                     Toast.makeText(requireContext(), "Mission succeed", Toast.LENGTH_SHORT).show()
                     val data = response.body()
 
